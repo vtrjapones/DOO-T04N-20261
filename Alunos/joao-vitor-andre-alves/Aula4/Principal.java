@@ -74,16 +74,20 @@ public class Principal {
 
                 System.out.println("Informe a data da venda (dd/MM/yyyy):");
                 String dataTexto = scan.nextLine();
+				// futuramente adicionar limpeza no input do usuario		
 
                 LocalDate dataInformada = LocalDate.parse(dataTexto, formatter);
+				// transforma string para date usando 'parse'
 
 				registrarVenda(valorPlantaData, qtdData, dataInformada);
 				break;
 			case 5: 
 				buscarVendaPorDia();
+				// nao usei parametros pq nao vou reutilizar essa funcao
 				break;
 			case 6:
 				buscarVendaPorMes();
+				// nao usei parametros pq nao vou reutilizar essa funcao
 				break;
 			case 0:
 				System.out.println("Encerrando a execução da loja da Gabrielinha. Obrigado por comprar conosco!");
@@ -190,6 +194,8 @@ public class Principal {
 			if (venda.getDataVenda().equals(dataBusca)) {
 				quantidadeVendas++;
 				totalVendido += venda.getValorComDesconto();
+
+				// busca na data completa 2025-01-01
 			}
 		}
 	
@@ -214,6 +220,8 @@ public class Principal {
 				quantidadeDeVendas++;
 				totalVendido += venda.getValorComDesconto();
 			}
+
+			// busca na data quebrada, só mes e só ano, os usando como condição pro filtro
 		}
 
 		System.out.printf("Data pesquisada: %02d/%d%n", mes, ano);
