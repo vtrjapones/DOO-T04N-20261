@@ -163,14 +163,18 @@ public class Principal {
                 case 6:
                     System.out.println("Dados da loja:");
 
-                    System.out.println(loja.apresentarSe());
+                    loja.apresentarSe();
 
-                    for(int v=0; v<loja.vendedores; v++) {
-				        loja.vendedores[v].apresentarse();
-			        }
+                    for (int v = 0; v < loja.vendedores.size(); v++) {
+                        System.out.println("\n| Vendedor |\n");
+                        loja.vendedores.get(v).apresentarSe();
+                        System.out.println("\n------------------\n");
+                    }
 
-                    for(int b=0; b<loja.clientes; b++) {
-                        loja.clientes[b].apresentarse();
+                    for (int b = 0; b < loja.clientes.size(); b++) {
+                        System.out.println("\n| Cliente |\n");
+                        loja.clientes.get(b).apresentarSe();
+                        System.out.println("\n------------------\n");
                     }
                 break;
 

@@ -39,9 +39,9 @@ public class Loja {
     // Mostra os dados da loja
     public void apresentarSe() {
         System.out.println("\n===== DADOS DA LOJA =====\n");
-        System.out.println("Loja: " + nomeFantasia);
-        System.out.println("CNPJ: " + cnpj);
-        System.out.println("Endereco: " + rua + ", " + bairro + ", " + cidade);
+        System.out.println("Loja: " + nomeFantasia + ".");
+        System.out.println("CNPJ: " + cnpj + ".");
+        System.out.println("Endereco: " + rua + ", " + bairro + ", " + cidade + ".");
         System.out.println("\n===== ===== ===== =====\n");
     }
 }

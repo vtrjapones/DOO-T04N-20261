@@ -34,9 +34,9 @@ public class Vendedor {
 
     // Printa os dados do vendedor
     public void apresentarSe() {
-        System.out.println("Nome: " + nome);
-        System.out.println("Idade: " + idade);
-        System.out.println("Loja: " + loja.nomeFantasia);
+        System.out.println("Nome: " + nome + ".");
+        System.out.println("Idade: " + idade + ".");
+        System.out.println("Loja: " + loja.nomeFantasia + ".");
     }
 
     // Calcula media salarial

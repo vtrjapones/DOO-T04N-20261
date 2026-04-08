@@ -20,7 +20,7 @@ public class Cliente {
 
     // Mostragem do cliente
     public void apresentarSe() {
-        System.out.println("Nome: " + nome);
-        System.out.println("Idade: " + idade);
+        System.out.println("Nome: " + nome + ".");
+        System.out.println("Idade: " + idade + ".");
     }
 }
